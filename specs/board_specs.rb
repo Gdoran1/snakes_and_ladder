@@ -1,5 +1,7 @@
 require_relative("../board.rb")
 require_relative("../modifier.rb")
+require_relative("../player.rb")
+require_relative("../dice.rb")
 require("minitest/autorun")
 require("minitest/rg")
 
@@ -22,11 +24,11 @@ class BoardTest < MiniTest::Test
   end
 
   def test_show_squares
-    assert_equal([], @board.squares)
+    assert_equal([], @board1.squares)
   end
 
-  def test_position_on_board
-    assert_equal(0, @board.squares[9])
-  end
+  # def test_position_on_board
+  #   assert_equal(0, @board1.squares[0])
+  # end
 
 end

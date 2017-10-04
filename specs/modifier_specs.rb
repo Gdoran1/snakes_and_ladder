@@ -30,7 +30,7 @@ class TestModifier < MiniTest::Test
     assert_equal(22, @player1.position)
   end
 
-  def test_player_lands_on_negitive_modifier
+  def test_player_lands_on_negative_modifier
     @player1.player_moves(16)
     @snake1.player_lands_on_modifier(@player1)
     assert_equal(4, @player1.position)
