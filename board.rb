@@ -1,9 +1,11 @@
 class Board
 attr_reader :squares
   def initialize
-    @squares = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    @max_number = 30
+    @squares = []
 puts @squares.count
   end
+
 
 
 end
